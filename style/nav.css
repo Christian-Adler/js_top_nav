@@ -170,3 +170,22 @@ body {
         filter: blur(3px);
     }
 }
+
+#scrollPos {
+    position: fixed;
+    top: 1px;
+    left: 0;
+    height: 3px;
+    background: #00a7ff;
+    box-sizing: border-box;
+    border-top: 1px solid #87dcff;
+    border-bottom: 1px solid #004397;
+    z-index: 2;
+    /*filter: blur(1px);*/
+    transition: all 0.5s ease-out;
+    opacity: 0.5;
+}
+
+#scrollPos.visible {
+    opacity: 1;
+}
